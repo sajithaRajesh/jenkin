@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 /**
@@ -10,7 +11,9 @@ public static WebDriver driver;
 
     @Test
     public static void open(){
+        driver=new FirefoxDriver();
         driver.get(url);
+        System.out.print(driver.getTitle());
     }
 
 }
