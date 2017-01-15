@@ -14,6 +14,7 @@ public static WebDriver driver;
         driver=new FirefoxDriver();
         driver.get(url);
         System.out.print(driver.getTitle());
+        /*added added*/
     }
 
 }
